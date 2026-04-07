@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(IMAGES/LOCK.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-box {
+  position: relative;
+}
+.search-box input {
+  padding: 8px 35px 8px 10px;
+  border-radius: 6px;
+  border: none;
+}
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.login-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.signup-btn {
+  background: #fff;
+  color: #000;
+}
+
+/* FORM */
+.wrapper {
+  width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px 15px 15px 40px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+}
+
+.input-field i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}

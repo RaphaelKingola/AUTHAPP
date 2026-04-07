@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 🔥 NAVBAR -->
+    <div class="navbar">
+      <div class="logo">AuthApp</div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <i class="bx bx-search"></i>
+      </div>
+
+      <div class="nav-actions">
+        <button class="login-btn"><i class="bx bx-log-in"></i> Login</button>
+        <button class="signup-btn">
+          <i class="bx bx-user-plus"></i> Sign Up
+        </button>
+      </div>
+    </div>
+
+    <!-- 🔥 FORM -->
+    <div class="wrapper">
+      <form>
+        <h1>Login</h1>
+
+        <div class="input-field">
+          <input type="text" placeholder="Username or Email" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-field">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="register-link">
+          <p>Don't have an account? <a href="registration.html">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- 🔥 FOOTER -->
+    <footer>Developed By Racha Visuals 0796118284</footer>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+/* 🔥 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔥 BODY */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(IMAGES/LOCK.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* 🔥 NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 15px 30px;
+  margin: 10px;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 🔍 SEARCH */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 35px 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 180px;
+}
+
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 🔘 NAV BUTTONS */
+.nav-actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.signup-btn {
+  background: #fff;
+  color: #000;
+}
+
+/* ========================= */
+/* 🔥 DASHBOARD CONTENT */
+/* ========================= */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* 🔥 CARDS (FIXED → GRID) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  padding: 25px;
+  text-align: center;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.card p {
+  font-size: clamp(18px, 3vw, 22px);
+  margin-top: 5px;
+}
+
+/* 🔥 FORM SECTION */
+.form-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* 🔥 TABLE */
+.table-section {
+  margin-bottom: 50px;
+  overflow-x: auto; /* 🔥 KEY FIX */
+}
+
+table {
+  width: 100%;
+  min-width: 600px; /* prevents squishing */
+  border-collapse: collapse;
+
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 🔥 FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .nav-actions {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+  }
+
+  .nav-actions button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

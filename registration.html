@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">AuthApp</div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+
+      <!-- 🔍 SEARCH -->
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <i class="bx bx-search"></i>
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="nav-actions">
+        <button class="login-btn"><i class="bx bx-log-in"></i> Login</button>
+        <button class="signup-btn">
+          <i class="bx bx-user-plus"></i> Sign Up
+        </button>
+      </div>
+    </div>
+
+    <!-- REGISTRATION FORM -->
+    <div class="wrapper">
+      <form action="">
+        <h1>Registration</h1>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="text" placeholder="User Name" required />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bx-envelope"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="number" placeholder="Phone Number" required />
+            <i class="bx bxs-phone"></i>
+          </div>
+
+          <!-- ✅ NEW: Gender -->
+          <div class="input-field">
+            <select required>
+              <option value="" disabled selected>Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <i class="bx bx-male-female"></i>
+          </div>
+
+          <!-- ✅ NEW: City -->
+          <div class="input-field">
+            <input type="text" placeholder="City of Residence" required />
+            <i class="bx bx-map"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Enter Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Confirm Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+        </div>
+
+        <label>
+          <input type="checkbox" />
+          I hereby declare that the above information provided is true and
+          correct
+        </label>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <footer>Developed By Racha Visuals 0796118284</footer>
+  </body>
+</html>

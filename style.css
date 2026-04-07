@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*  BODY */
+body {
+  min-height: 100vh;
+  background: url(IMAGES/LOCK.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/*  NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 15px 30px;
+  margin: 10px;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+/*  NAV LINKS */
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SEARCH */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 35px 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*NAV BUTTONS */
+.nav-actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.signup-btn {
+  background: #fff;
+  color: #000;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+
+  padding: 40px;
+  border-radius: 15px;
+
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+  font-size: clamp(24px, 5vw, 42px);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================= */
+/* 📱 TABLET (≤ 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .nav-actions {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE (≤ 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  .nav-actions button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
